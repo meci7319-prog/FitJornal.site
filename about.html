@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>درباره نشریه | نشریه علمی تخصصی چفت (FIT) دانشگاه تبریز</title>
+  <meta name="description" content="آشنایی با رسالت، اهداف، حوزه‌های تخصصی و ارکان علمی و تحریریه نشریه علمی دانشجویی مهندسی مکانیک – ساخت و تولید (چفت) دانشگاه تبریز." />
+  <meta property="og:title" content="درباره نشریه علمی تخصصی چفت | دانشگاه تبریز" />
+  <meta property="og:description" content="معرفی نشریه، صاحب امتیاز، استاد مشاور و سردبیر نشریه چفت" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/jpeg" href="assets/images/fit-journal-logo.jpg" />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface">
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md">
+      <a href="index.html" class="flex items-center gap-space-sm group">
+        <div class="flex items-center gap-space-xs">
+          <img alt="لوگوی نشریه علمی تخصصی چفت" class="w-9 h-9 rounded-full object-cover bg-surface-container-low" src="assets/images/fit-journal-logo.jpg" />
+          <div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-[18px]">school</span>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors">نشریه دانشجویی چفت</span>
+          <span class="font-label-sm text-label-sm text-secondary hidden sm:block">دانشکده مهندسی مکانیک ساخت و تولید · دانشگاه تبریز</span>
+        </div>
+      </a>
+
+      <nav aria-label="منوی اصلی" class="hidden lg:flex items-center gap-space-lg">
+        <a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" href="index.html">صفحه اصلی</a>
+        <a aria-current="page" class="transition-colors text-primary font-title-md" href="about.html">درباره نشریه</a>
+        <a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" href="issues.html">شماره‌های نشریه</a>
+        <a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" href="articles.html">مقالات</a>
+        <a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" href="contact.html">ارتباط با ما</a>
+      </nav>
+
+      <div class="flex items-center gap-space-sm">
+        <button id="global-search-trigger" aria-label="جستجو در نشریه" class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button">
+          <span class="material-symbols-outlined text-[20px]">search</span>
+        </button>
+        <div class="hidden sm:flex items-center gap-space-xs">
+          <a aria-label="تلگرام نشریه چفت" class="w-8 h-8 rounded-lg flex items-center justify-center text-secondary hover:bg-surface-container-high hover:text-on-surface transition-colors" href="https://t.me/FitJournal1" rel="noopener noreferrer" target="_blank" title="تلگرام">
+            <span class="material-symbols-outlined text-[18px]">send</span>
+          </a>
+          <a aria-label="بله نشریه چفت" class="w-8 h-8 rounded-lg flex items-center justify-center text-secondary hover:bg-surface-container-high hover:text-on-surface transition-colors" href="https://ble.ir/Fitjornal1" rel="noopener noreferrer" target="_blank" title="بله">
+            <span class="material-symbols-outlined text-[18px]">forum</span>
+          </a>
+          <a aria-label="اینستاگرام نشریه چفت" class="w-8 h-8 rounded-lg flex items-center justify-center text-secondary hover:bg-surface-container-high hover:text-on-surface transition-colors" href="https://www.instagram.com/fitjornal" rel="noopener noreferrer" target="_blank" title="اینستاگرام">
+            <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+          </a>
+        </div>
+        <a class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-high rounded-lg transition-colors font-label-md text-label-md" href="account.html">
+          <span class="material-symbols-outlined text-[18px]">account_circle</span>
+          <span>ورود و عضویت</span>
+        </a>
+        <button id="mobile-menu-toggle" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobile-nav-drawer" class="lg:hidden w-9 h-9 rounded-lg flex items-center justify-center text-on-surface bg-surface-container-low hover:bg-surface-container-high transition-colors" type="button">
+          <span class="material-symbols-outlined text-[22px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="fixed inset-0 z-50 hidden lg:hidden" role="dialog" aria-modal="true" aria-label="منوی موبایل">
+    <div id="mobile-nav-backdrop" class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm"></div>
+    <div class="fixed top-0 right-0 bottom-0 w-72 max-w-[85vw] bg-surface-container-lowest shadow-2xl p-space-lg flex flex-col justify-between overflow-y-auto">
+      <div class="flex flex-col gap-space-lg">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-space-xs">
+            <img alt="لوگوی نشریه چفت" class="w-8 h-8 rounded-full object-cover" src="assets/images/fit-journal-logo.jpg" />
+            <span class="font-title-md text-title-md text-on-surface font-bold">نشریه چفت</span>
+          </div>
+          <button id="mobile-menu-close" aria-label="بستن منو" class="w-8 h-8 rounded-lg flex items-center justify-center text-secondary hover:bg-surface-container-high" type="button">
+            <span class="material-symbols-outlined text-[20px]">close</span>
+          </button>
+        </div>
+        <nav class="flex flex-col gap-space-xs" aria-label="منوی موبایل">
+          <a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low font-title-md" href="index.html">صفحه اصلی</a>
+          <a aria-current="page" class="px-space-md py-space-sm rounded-lg bg-surface-container-low text-primary font-title-md" href="about.html">درباره نشریه</a>
+          <a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low font-title-md" href="issues.html">شماره‌های نشریه</a>
+          <a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low font-title-md" href="articles.html">مقالات</a>
+          <a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low font-title-md" href="issue-details.html">جزئیات شماره اول</a>
+          <a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low font-title-md" href="contact.html">ارتباط با ما</a>
+          <a class="px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-md mt-space-xs flex items-center justify-center gap-space-xs" href="account.html">
+            <span class="material-symbols-outlined text-[18px]">account_circle</span>
+            <span>ورود و عضویت</span>
+          </a>
+        </nav>
+      </div>
+      <div class="pt-space-lg flex flex-col gap-space-xs">
+        <span class="font-label-sm text-label-sm text-secondary">شبکه‌های رسمی نشریه</span>
+        <div class="flex items-center gap-space-xs">
+          <a aria-label="تلگرام" class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary hover:text-primary" href="https://t.me/FitJournal1" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">send</span></a>
+          <a aria-label="بله" class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary hover:text-primary" href="https://ble.ir/Fitjornal1" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">forum</span></a>
+          <a aria-label="اینستاگرام" class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary hover:text-primary" href="https://www.instagram.com/fitjornal" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Search Modal -->
+  <div id="global-search-modal" class="fixed inset-0 z-50 hidden flex items-start justify-center pt-20 px-margin-mobile" role="dialog" aria-modal="true" aria-label="جستجو در نشریه چفت">
+    <div id="global-search-backdrop" class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm"></div>
+    <div class="relative z-10 w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-2xl p-space-lg flex flex-col gap-space-md">
+      <div class="flex items-center justify-between gap-space-sm">
+        <div class="relative flex-1">
+          <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-secondary text-[20px]">search</span>
+          <input id="global-search-input" type="text" class="w-full bg-surface-container-low text-on-surface pr-10 pl-space-md py-2.5 rounded-lg font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/30" placeholder="جستجو در شماره‌ها، مقالات و بخش‌های نشریه..." />
+        </div>
+        <button id="global-search-close" aria-label="بستن جستجو" class="w-9 h-9 rounded-lg flex items-center justify-center text-secondary hover:bg-surface-container-high" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div id="global-search-results" class="flex flex-col gap-space-xs max-h-80 overflow-y-auto"></div>
+    </div>
+  </div>
+
+  <main class="w-full pt-20 bg-surface min-h-[calc(100vh-5rem)]">
+    <div class="flex flex-col w-full">
+      <!-- Minimalist Academic Identity Hero Banner -->
+      <section class="relative w-full overflow-hidden bg-surface py-space-xl">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+          <nav aria-label="مسیر راهنما" class="flex items-center gap-space-xs font-label-md text-label-md text-secondary mb-space-lg">
+            <a class="hover:text-primary transition-colors" href="index.html">صفحه اصلی</a>
+            <span class="material-symbols-outlined text-[14px]">chevron_left</span>
+            <span class="text-on-surface font-title-md">درباره نشریه و هیئت تحریریه</span>
+          </nav>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end mb-space-xl">
+            <div class="lg:col-span-8 flex flex-col gap-space-sm">
+              <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">
+                درباره FIT Journal
+              </h1>
+              <p class="font-headline-sm text-headline-sm text-secondary font-normal max-w-3xl leading-relaxed">
+                آشنایی با رسالت، اهداف و هویت نشریه علمی-دانشجویی مهندسی مکانیک – ساخت و تولید دانشگاه تبریز
+              </p>
+            </div>
+            <div class="lg:col-span-4 flex lg:justify-end">
+              <div class="inline-flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-xl shadow-sm">
+                <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-[20px]">verified</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">وابستگی علمی</span>
+                  <span class="font-technical-code text-technical-code text-on-surface font-medium" dir="ltr">TABRIZ-MECH-MFG</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dignified Dual Institutional Crests Presentation -->
+          <div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg lg:p-space-xl relative overflow-hidden">
+            <div class="absolute -left-12 -top-12 w-64 h-64 bg-surface-container-high/40 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-space-xl items-center relative z-10">
+              <!-- Journal Crest & Identity -->
+              <div class="md:col-span-6 flex flex-col sm:flex-row items-center sm:items-start gap-space-lg text-center sm:text-right">
+                <div class="w-28 h-28 sm:w-32 sm:h-32 flex-shrink-0 bg-surface-container-low rounded-xl p-3 flex items-center justify-center shadow-sm">
+                  <img alt="لوگوی رسمی نشریه علمی تخصصی چفت" class="max-w-full max-h-full object-contain" src="assets/images/fit-journal-logo.jpg" />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <span class="font-label-sm text-label-sm text-primary uppercase font-semibold">نشریه علمی، دانشجویی و فرهنگی</span>
+                  <h2 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-1">نشریه تخصصی چِفْت (FIT)</h2>
+                  <span class="font-body-md text-body-md text-secondary" dir="ltr">Manufacturing Engineering Journal</span>
+                  <span class="font-label-sm text-label-sm text-outline mt-2">تأسیس و فعالیت مستمر از پاییز ۱۴۰۵</span>
+                </div>
+              </div>
+
+              <!-- Divider -->
+              <div class="hidden md:flex md:col-span-1 justify-center items-center h-24 relative">
+                <div class="w-px h-full bg-surface-container-highest"></div>
+                <div class="absolute w-2 h-2 rounded-full bg-outline-variant"></div>
+              </div>
+
+              <!-- University of Tabriz Crest & Department -->
+              <div class="md:col-span-5 flex flex-col sm:flex-row items-center sm:items-start gap-space-lg text-center sm:text-right">
+                <div class="w-28 h-28 sm:w-32 sm:h-32 flex-shrink-0 bg-surface-container-low rounded-xl p-3 flex items-center justify-center shadow-sm">
+                  <img alt="نشان رسمی دانشگاه تبریز" class="max-w-full max-h-full object-contain" src="assets/images/university-logo.jpg" />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">دانشگاه مرجع و میزبان</span>
+                  <h3 class="font-title-lg text-title-lg text-on-surface mt-1 mb-1">دانشگاه تبریز</h3>
+                  <p class="font-body-md text-body-md text-secondary">دانشکده مهندسی مکانیک · گروه ساخت و تولید</p>
+                  <a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container transition-colors mt-2" href="https://stjournals.tabrizu.ac.ir/fa/page/13304/" rel="noopener noreferrer" target="_blank">
+                    <span>سامانه نشریات دانشجویی</span>
+                    <span class="material-symbols-outlined text-[15px]">arrow_outward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Editorial Introduction -->
+      <section class="w-full py-space-xl bg-surface-container-lowest">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+            <div class="lg:col-span-7 flex flex-col gap-space-md">
+              <div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+                <span class="material-symbols-outlined text-[18px]">menu_book</span>
+                <span>بیانیه معرفی و چارچوب علمی</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
+                توسعه دانش ساخت، همگام با استانداردهای نوین مهندسی جهان
+              </h2>
+              <div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm">
+                <p class="font-title-lg text-title-lg text-on-surface leading-loose font-normal">
+                  «FIT Journal، نشریه علمی و فرهنگی دانشجویی مهندسی مکانیک – ساخت و تولید دانشگاه تبریز است که با هدف گسترش دانش تخصصی، معرفی پژوهش‌های نوین و ایجاد بستری برای تبادل ایده‌ها و تجربیات علمی فعالیت می‌کند.»
+                </p>
+              </div>
+              <p class="font-body-lg text-body-lg text-secondary leading-relaxed text-justify">
+                این نشریه با تمرکز بر پیوند میان علوم بنیادین مکانیک و فناوری‌های کاربری تولید قطعات دقیق شکل گرفته است. در دورانی که صنایع مدرن به سمت اتوماسیون پیشرفته، ساخت افزایشی هیبریدی و بهینه‌سازی زنجیره تولید حرکت می‌کنند، FIT Journal می‌کوشد مستندسازی دستاوردهای دانشگاهی و انتقال تجربیات آزمایشگاهی دانشجویان و محققان را به صورت مدون ارائه نماید.
+              </p>
+              <div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+                  <span class="font-body-md text-body-md text-on-surface">رویکرد پژوهشی کاربردمحور</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[20px]">account_balance</span>
+                  <span class="font-body-md text-body-md text-on-surface">ثبت در سامانه نشریات دانشگاه تبریز</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[20px]">layers</span>
+                  <span class="font-body-md text-body-md text-on-surface">انتشار فصلنامه علمی</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 flex flex-col gap-space-md">
+              <div class="relative rounded-xl overflow-hidden shadow-md">
+                <img alt="آزمایشگاه مهندسی مکانیک ساخت و تولید" class="w-full h-80 object-cover" src="assets/images/mech-lab.png" />
+              </div>
+              <div class="grid grid-cols-2 gap-space-sm">
+                <div class="bg-surface-container-low p-space-md rounded-xl">
+                  <div class="font-headline-md text-headline-md text-primary font-bold">فصلنامه</div>
+                  <div class="font-label-md text-label-md text-secondary mt-1">تواتر انتشار نشریه چفت</div>
+                </div>
+                <div class="bg-surface-container-low p-space-md rounded-xl">
+                  <div class="font-headline-md text-headline-md text-tertiary font-bold">رایگان</div>
+                  <div class="font-label-md text-label-md text-secondary mt-1">دسترسی آزاد آکادمیک (Open Access)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission & Vision -->
+      <section class="w-full py-space-xl bg-surface">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+          <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-xl">
+            <span class="text-primary font-label-md text-label-md uppercase tracking-wider mb-2">ستون‌های بنیادین</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">اهداف و رسالت سازمانی</h2>
+            <p class="font-body-md text-body-md text-secondary mt-2">
+              نقشه‌راه تحریریه برای تبدیل شدن به بستری علمی و الهام‌بخش در حوزه مهندسی ساخت و تولید
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+            <div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+              <div class="flex flex-col">
+                <div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-space-lg group-hover:scale-105 transition-transform">
+                  <span class="material-symbols-outlined text-[26px]">school</span>
+                </div>
+                <span class="font-technical-code text-technical-code text-outline mb-1">محور ۰۱ / آموزش و پژوهش</span>
+                <h3 class="font-title-lg text-title-lg text-on-surface font-bold leading-snug mb-space-sm">
+                  ارتقای دانش مهندسی و نشر دستاوردهای پژوهشی دانشجویان و اساتید
+                </h3>
+                <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                  مهیاسازی تریبونی مستند برای گزارش پروژه‌های کاربردی، یافته‌های آزمایشگاهی و بازتاب پژوهش‌های دانشجویی با رویکرد ارتقای سواد علمی جمعی.
+                </p>
+              </div>
+              <div class="pt-space-lg mt-space-md flex items-center gap-space-xs text-primary font-label-md text-label-md">
+                <span>پژوهش معتبر</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+              </div>
+            </div>
+
+            <div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+              <div class="flex flex-col">
+                <div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-space-lg group-hover:scale-105 transition-transform">
+                  <span class="material-symbols-outlined text-[26px]">precision_manufacturing</span>
+                </div>
+                <span class="font-technical-code text-technical-code text-outline mb-1">محور ۰۲ / صنعت و کاربرد</span>
+                <h3 class="font-title-lg text-title-lg text-on-surface font-bold leading-snug mb-space-sm">
+                  ایجاد پل ارتباطی بین بدنه دانشگاهی و صنایع ساخت و تولید
+                </h3>
+                <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                  کاهش فاصله ادراکی میان تئوری‌های دانشگاهی و چالش‌های میدانی کارخانجات صنعتی؛ از طریق تهیه گزارش‌های تخصصی و تحلیل مسائل خطوط تولید.
+                </p>
+              </div>
+              <div class="pt-space-lg mt-space-md flex items-center gap-space-xs text-primary font-label-md text-label-md">
+                <span>پیوند دانشگاه و صنعت</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+              </div>
+            </div>
+
+            <div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+              <div class="flex flex-col">
+                <div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-space-lg group-hover:scale-105 transition-transform">
+                  <span class="material-symbols-outlined text-[26px]">smart_toy</span>
+                </div>
+                <span class="font-technical-code text-technical-code text-outline mb-1">محور ۰۳ / نوآوری و آینده</span>
+                <h3 class="font-title-lg text-title-lg text-on-surface font-bold leading-snug mb-space-sm">
+                  ترویج ادبیات علمی و نگاه نوآورانه به فرایندهای مدرن تولیدی
+                </h3>
+                <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                  تمرکز بر سرفصل‌های لبه فناوری از قبیل ساخت افزایشی فلزی، به‌کارگیری الگوریتم‌های هوش مصنوعی در عیب‌یابی ابزار و اتوماسیون هوشمند نسل ۴ صنعت.
+                </p>
+              </div>
+              <div class="pt-space-lg mt-space-md flex items-center gap-space-xs text-primary font-label-md text-label-md">
+                <span>فناوری‌های نوین</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Areas of Specialization -->
+      <section class="w-full py-space-xl bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+            <div class="lg:col-span-4 flex flex-col gap-space-sm lg:sticky lg:top-24">
+              <span class="text-primary font-label-md text-label-md uppercase font-semibold">حیطه انتشاراتی</span>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">حوزه‌های تخصصی تحت پوشش</h2>
+              <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                هیئت تحریریه نشریه مقالات تحلیلی، ترجمه‌های تخصصی، چکیده پروژه‌ها و مقالات پژوهشی مرتبط با ۵ حوزه اصلی مهندسی ساخت را دریافت و پس از بررسی منتشر می‌نماید.
+              </p>
+              <div class="mt-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+                <div class="flex items-center gap-space-xs text-on-surface font-title-md text-title-md font-medium mb-1">
+                  <span class="material-symbols-outlined text-primary text-[20px]">assignment_turned_in</span>
+                  <span>معیار پذیرش مطالب</span>
+                </div>
+                <p class="font-body-md text-body-md text-secondary">
+                  اصالت علمی، ساختار مهندسی دقیق، رعایت اصول نگارش آکادمیک فارسی و دارا بودن بار تخصصی برای جامعه مهندسی.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-space-sm">
+                    <span class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+                      <span class="material-symbols-outlined text-[22px]">settings_suggest</span>
+                    </span>
+                    <span class="font-technical-code text-technical-code text-outline">SEC-01</span>
+                  </div>
+                  <h3 class="font-title-lg text-title-lg text-on-surface mb-2 font-semibold">ماشین‌کاری پیشرفته و میکروماشین‌کاری</h3>
+                  <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                    تحلیل فرایندهای ماشین‌کاری تخلیه الکتریکی (EDM)، وایرکات، ماشین‌کاری التراسونیک، لیزر و بهینه‌سازی پارامترهای برش و سایش ابزار در دقت‌های میکرومتری.
+                  </p>
+                </div>
+                <div class="pt-space-md mt-space-sm flex flex-wrap gap-1.5">
+                  <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary">EDM/ECM</span>
+                  <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary">عمر ابزار</span>
+                  <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary">زبری سطح</span>
+                </div>
+              </div>
+
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-space-sm">
+                    <span class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+                      <span class="material-symbols-outlined text-[22px]">view_in_ar</span>
+                    </span>
+                    <span class="font-technical-code text-technical-code text-outline">SEC-02</span>
+                  </div>
+                  <h3 class="font-title-lg text-title-lg text-on-surface mb-2 font-semibold">فناوری‌های ساخت افزایشی (3D Printing)</h3>
+                  <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                    ساخت لایه‌ای قطعات فلزی (SLM/DMLS) و پلیمری، پرینت سه‌بعدی بایومتریال‌ها، متالورژی پودر و بررسی خواص مکانیکی و تنش‌های پسماند در ساخت افزایشی.
+                  </p>
+                </div>
+                <div class="pt-space-md mt-space-sm flex flex-wrap gap-1.5">
+                  <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary">SLM فلزی</span>
+                  <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary">FDM صنعتی</span>
+                  <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary">تنش پسماند</span>
+                </div>
+              </div>
+
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-space-sm">
+                    <span class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+                      <span class="material-symbols-outlined text-[22px]">smart_toy</span>
+                    </span>
+                    <span class="font-technical-code text-technical-code text-outline">SEC-03</span>
+                  </div>
+                  <h3 class="font-title-lg text-title-lg text-on-surface mb-2 font-semibold">اتوماسیون صنعتی، مانیتورینگ و رباتیک</h3>
+                  <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                    سیستم‌های کنترل کیفیت بلادرنگ، داده‌برداری و سنسورینگ ماشین‌آلات، ربات‌های صنعتی جابجایی و جوشکاری، و کاربرد اینترنت اشیاء صنعتی (IIoT).
+                  </p>
+                </div>
+                <div class="pt-space-md mt-space-sm flex flex-wrap gap-1.5">
+                  <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary">PLC و SCADA</span>
+                  <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary">بینایی ماشین</span>
+                  <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary">رباتیک صنعتی</span>
+                </div>
+              </div>
+
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-space-sm">
+                    <span class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+                      <span class="material-symbols-outlined text-[22px]">science</span>
+                    </span>
+                    <span class="font-technical-code text-technical-code text-outline">SEC-04</span>
+                  </div>
+                  <h3 class="font-title-lg text-title-lg text-on-surface mb-2 font-semibold">علم مواد، متالورژی ساخت و شکل‌دهی</h3>
+                  <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                    تحلیل فرایندهای نورد، اکستروژن، هیدروفرمینگ، ریخته‌گری دقیق، بررسی ریزساختار و متالورژی جوشکاری، و عملیات حرارتی آلیاژهای فوق پیشرفته.
+                  </p>
+                </div>
+                <div class="pt-space-md mt-space-sm flex flex-wrap gap-1.5">
+                  <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary">شکل‌دهی ورق</span>
+                  <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary">متالورژی جوش</span>
+                  <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary">نانوکامپوزیت‌ها</span>
+                </div>
+              </div>
+
+              <div class="sm:col-span-2 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row gap-space-md items-start sm:items-center justify-between">
+                <div class="flex gap-space-md items-start">
+                  <span class="w-10 h-10 rounded-lg bg-surface-container-high flex-shrink-0 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[22px]">computer</span>
+                  </span>
+                  <div>
+                    <div class="flex items-center gap-space-xs mb-1">
+                      <h3 class="font-title-lg text-title-lg text-on-surface font-semibold">طراحی به کمک کامپیوتر (CAD / CAM / CAE)</h3>
+                      <span class="font-technical-code text-technical-code text-outline mr-2">SEC-05</span>
+                    </div>
+                    <p class="font-body-md text-body-md text-secondary leading-relaxed max-w-2xl">
+                      مدل‌سازی پارامتریک، شبیه‌سازی اجزای محدود (FEA) فرایندهای تولید، تحلیل جریان مذاب و شبیه‌سازی تزریق پلاستیک، و کدنویسی و بهینه‌سازی مسیر ابزار CNC.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap sm:flex-col gap-1.5 flex-shrink-0">
+                  <span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-low text-secondary font-technical-code text-center">Abaqus / Ansys</span>
+                  <span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-low text-secondary font-technical-code text-center">PowerMill / Mastercam</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Editorial Leadership & Faculty Advisor (Integrated faithfully from Stitch Screen 7) -->
+      <section id="leadership" class="w-full py-space-xl bg-surface-container-lowest">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+          <div class="flex flex-col items-center text-center max-w-2xl mx-auto">
+            <span class="text-primary font-label-md text-label-md uppercase font-semibold mb-2">ارکان علمی و مدیریتی نشریه</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">صاحب امتیاز، استاد مشاور و سردبیر</h2>
+            <p class="font-body-md text-body-md text-secondary mt-2">
+              معرفی ارکان رسمی نشریه علمی تخصصی چفت در دانشکده مهندسی مکانیک دانشگاه تبریز
+            </p>
+          </div>
+
+          <!-- Owner & Managing Director Profile Banner -->
+          <div class="bg-surface-container-low rounded-xl p-space-lg lg:p-space-xl shadow-sm flex flex-col md:flex-row items-center md:items-start gap-space-xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-2 h-full bg-primary"></div>
+            <div class="relative flex-shrink-0 group">
+              <div class="relative w-40 h-44 sm:w-48 sm:h-52 rounded-xl overflow-hidden shadow-md bg-surface-container">
+                <img alt="محمد ولی‌زاد - صاحب امتیاز و مدیرمسئول نشریه چفت" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out" src="assets/images/mohammad-valizad.png" />
+              </div>
+              <div class="mt-3 flex items-center justify-center gap-space-xs bg-surface-container-lowest px-space-sm py-space-xs rounded-lg shadow-sm">
+                <span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+                <span class="font-label-sm text-label-sm text-on-surface">فعال و در حال انتشار</span>
+              </div>
+            </div>
+
+            <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-right">
+              <div class="flex flex-wrap items-center justify-center md:justify-start gap-space-xs mb-space-sm">
+                <span class="px-space-sm py-0.5 rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[14px]">verified</span>
+                  دانشگاه تبریز
+                </span>
+                <span class="px-space-sm py-0.5 rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[14px]">precision_manufacturing</span>
+                  مهندسی ساخت و تولید
+                </span>
+                <span class="px-space-sm py-0.5 rounded-lg bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[14px]">auto_stories</span>
+                  دوره انتشار: فصلنامه
+                </span>
+              </div>
+              <h3 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-space-xs">
+                محمد ولی‌زاد
+              </h3>
+              <div class="flex items-center gap-space-xs text-primary font-title-lg text-title-lg mb-space-xs">
+                <span class="material-symbols-outlined text-[20px]">badge</span>
+                <span>صاحب امتیاز و مدیرمسئول نشریه علمی تخصصی چفت</span>
+              </div>
+              <p class="font-body-lg text-body-lg text-secondary mb-space-md">
+                دانشجوی کارشناسی ارشد مهندسی مکانیک ساخت و تولید · دانشکده مهندسی مکانیک دانشگاه تبریز
+              </p>
+              <div class="flex flex-wrap items-center justify-center md:justify-start gap-space-md">
+                <a class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-primary text-on-primary hover:bg-primary-container rounded-lg font-label-md text-label-md shadow-sm transition-colors" href="https://civilica.com/p/631142/" rel="noopener noreferrer" target="_blank">
+                  <span class="material-symbols-outlined text-[18px]">history_edu</span>
+                  <span>مشاهده رزومه در سیویلیکا (CIVILICA)</span>
+                  <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                </a>
+                <a class="flex items-center gap-space-xs text-secondary hover:text-primary font-label-md text-label-md" href="mailto:mr.mohammadvalizade7@gmail.com">
+                  <span class="material-symbols-outlined text-[18px] text-primary">mail</span>
+                  <span class="font-technical-code text-technical-code" dir="ltr">mr.mohammadvalizade7@gmail.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Managing Director Message + Advisor & Editor-in-Chief -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+            <div class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-lg lg:p-space-xl shadow-sm">
+              <div class="flex items-center gap-space-sm pb-space-md mb-space-md">
+                <div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-[22px]">format_quote</span>
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">سخن مدیرمسئول</h3>
+                  <span class="font-label-sm text-label-sm text-secondary">یادداشت افتتاحیه و چشم‌انداز نشریه علمی تخصصی چفت</span>
+                </div>
+              </div>
+              <div class="mb-space-md p-space-md rounded-xl bg-surface-container-lowest flex items-start gap-space-sm">
+                <span class="material-symbols-outlined text-primary text-[24px] flex-shrink-0 mt-0.5">lightbulb</span>
+                <p class="font-title-md text-title-md text-on-surface font-semibold leading-relaxed">
+                  «به نام خدا؛ دانش و فناوری، زمانی می‌توانند مسیر توسعه و پیشرفت را هموار کنند که در کنار پژوهش و تولید دانش، زمینه‌ای برای گفت‌وگو، تبادل تجربه و ارتباط میان پژوهشگران، متخصصان و نسل جوان مهیا شود.»
+                </p>
+              </div>
+              <div class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface leading-loose text-justify">
+                <p>
+                  نشریه مهندسی مکانیک ساخت و تولید با همین رویکرد تلاش می‌کند بستری برای طرح دیدگاه‌های علمی، معرفی دستاوردهای نوین و ایجاد ارتباط میان جامعه دانشگاهی و جریان‌های روز صنعت و فناوری فراهم آورد.
+                </p>
+                <p>
+                  ما در نشریه چفت بر این باوریم که ساخت و تولید آینده، حاصل پیوند میان دانش، خلاقیت، فناوری و همکاری خواهد بود. ازاین‌رو، تلاش می‌کنیم در کنار پرداختن به موضوعات تخصصی و علمی، ارتباط با پژوهشگران و متخصصان برجسته را نیز توسعه دهیم و دیدگاه‌های آنان را در اختیار دانشجویان و علاقه‌مندان این حوزه قرار دهیم.
+                </p>
+                <p>
+                  از تمامی استادان، پژوهشگران، دانشجویان و اعضای تیم نشریه که با ایده‌ها، تلاش و همراهی خود در مسیر ارتقای کیفیت این مجموعه نقش دارند، صمیمانه تشکر می‌کنم. امیدوارم نشریه چفت بتواند در مسیر توسعه دانش ساخت و تولید و ایجاد پلی میان دانشگاه، صنعت و نسل آینده مهندسان، گامی مؤثر بردارد.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 flex flex-col gap-space-md">
+              <!-- Faculty Advisor Card -->
+              <div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md group hover:bg-surface-container transition-colors shadow-sm">
+                <div class="flex items-start gap-space-md">
+                  <div class="relative w-24 h-28 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-high shadow-sm">
+                    <img alt="دکتر امیر مصطفی‌پور - استاد مشاور نشریه چفت" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out" src="assets/images/dr-mostafapour.jpg" />
+                  </div>
+                  <div class="flex-1 flex flex-col items-start justify-center">
+                    <span class="px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1 mb-space-xs">
+                      <span class="material-symbols-outlined text-[14px]">school</span>
+                      استاد مشاور نشریه
+                    </span>
+                    <h4 class="font-title-lg text-title-lg text-on-surface font-bold mb-0.5">دکتر امیر مصطفی‌پور</h4>
+                    <span class="font-label-md text-label-md text-primary font-medium mb-1">استاد و عضو هیئت علمی دانشگاه تبریز</span>
+                    <p class="font-label-sm text-label-sm text-secondary leading-relaxed">دانشکده مهندسی مکانیک · سرپرست علمی و راهبر پژوهش‌های ساخت و تولید</p>
+                  </div>
+                </div>
+                <div class="pt-space-xs border-t border-surface-container-high flex items-center justify-between font-label-sm text-label-sm text-secondary">
+                  <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-tertiary">apartment</span>دانشگاه تبریز</span>
+                  <span class="font-technical-code text-secondary" dir="ltr">Faculty Advisor</span>
+                </div>
+              </div>
+
+              <!-- Editor-in-Chief Card -->
+              <div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md group hover:bg-surface-container transition-colors shadow-sm">
+                <div class="flex items-start gap-space-md">
+                  <div class="relative w-24 h-28 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-high shadow-sm">
+                    <img alt="امید بالاخیال - سردبیر نشریه چفت" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out" src="assets/images/omid-balakhiyal.jpg" />
+                  </div>
+                  <div class="flex-1 flex flex-col items-start justify-center">
+                    <span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 mb-space-xs">
+                      <span class="material-symbols-outlined text-[14px]">edit_note</span>
+                      سردبیر نشریه
+                    </span>
+                    <h4 class="font-title-lg text-title-lg text-on-surface font-bold mb-0.5">امید بالاخیال</h4>
+                    <span class="font-label-md text-label-md text-primary font-medium mb-1">سردبیر و مدیر اجرایی تحریریه</span>
+                    <p class="font-label-sm text-label-sm text-secondary leading-relaxed">دانشجوی دکتری مهندسی مکانیک ساخت و تولید · ناظر ارشد ارزیابی و تدوین مقالات</p>
+                  </div>
+                </div>
+                <div class="pt-space-xs border-t border-surface-container-high flex items-center justify-between font-label-sm text-label-sm text-secondary">
+                  <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-tertiary">psychology</span>دانشجوی دکتری تخصصی</span>
+                  <span class="font-technical-code text-secondary" dir="ltr">Editor-in-Chief</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Governance Architecture -->
+      <section class="w-full py-space-xl bg-surface">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+          <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-xl">
+            <span class="text-primary font-label-md text-label-md uppercase font-semibold mb-2">ساختار اداری و علمی</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">ساختار اجرایی نشریه</h2>
+            <p class="font-body-md text-body-md text-secondary mt-2">
+              ترکیب سازمانی نشریه چفت با رویکرد شفافیت علمی در دانشکده مهندسی مکانیک دانشگاه تبریز
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md mb-space-xl">
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex items-start gap-space-md">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-high flex-shrink-0 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[22px]">apartment</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-secondary">صاحب امتیاز</span>
+                <h3 class="font-title-lg text-title-lg text-on-surface font-semibold mt-0.5">محمد ولی‌زاد</h3>
+                <p class="font-body-md text-body-md text-secondary mt-1">دانشجوی کارشناسی ارشد مهندسی مکانیک – ساخت و تولید</p>
+              </div>
+            </div>
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex items-start gap-space-md">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-high flex-shrink-0 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[22px]">badge</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-secondary">مدیر مسئول</span>
+                <h3 class="font-title-lg text-title-lg text-on-surface font-semibold mt-0.5">محمد ولی‌زاد</h3>
+                <p class="font-body-md text-body-md text-secondary mt-1">مدیریت کلان و هماهنگی انتشار نشریه چفت</p>
+              </div>
+            </div>
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex items-start gap-space-md">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-high flex-shrink-0 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[22px]">edit_note</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-secondary">سردبیر</span>
+                <h3 class="font-title-lg text-title-lg text-on-surface font-semibold mt-0.5">امید بالاخیال</h3>
+                <p class="font-body-md text-body-md text-secondary mt-1">هدایت محتوایی و نظارت علمی بر مقالات شماره</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-surface-container-high/30 p-space-lg rounded-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+            <div class="flex items-center gap-space-sm text-right">
+              <span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant flex-shrink-0">
+                <span class="material-symbols-outlined text-[20px]">info</span>
+              </span>
+              <p class="font-body-md text-body-md text-secondary">
+                <strong class="text-on-surface font-medium">یادداشت شفافیت:</strong> اطلاعات کامل شناسنامه و متن کامل مقالات شماره اول در نسخه منتشرشده در سامانه رسمی نشریات دانشگاه تبریز قابل مشاهده است.
+              </p>
+            </div>
+            <a class="flex-shrink-0 inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors shadow-sm" href="issues.html">
+              <span>مشاهده آرشیو شماره‌ها</span>
+              <span class="material-symbols-outlined text-[16px]">menu_book</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Callout -->
+      <section class="w-full py-space-xl bg-surface-container-lowest">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+          <div class="bg-gradient-to-br from-surface-container-low to-surface-container p-space-xl rounded-xl shadow-sm relative overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10">
+              <div class="lg:col-span-8 flex flex-col gap-space-xs">
+                <span class="font-label-sm text-label-sm text-primary font-semibold uppercase">همکاری علمی با نشریه</span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+                  علاقه‌مند به ارسال مقاله یا پیوستن به تیم تحریریه هستید؟
+                </h2>
+                <p class="font-body-lg text-body-lg text-secondary leading-relaxed max-w-2xl">
+                  دانشجویان دوره‌های کارشناسی و تحصیلات تکمیلی دانشکده مکانیک می‌توانند مقالات تألیفی، گزارش پروژه‌های صنعتی و مقالات مروری خود را جهت بررسی و انتشار برای دفتر نشریه ارسال فرمایند.
+                </p>
+              </div>
+              <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm justify-end">
+                <a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-lg bg-primary text-on-primary font-title-md text-title-md font-semibold hover:bg-primary-container transition-colors shadow-sm text-center" href="contact.html">
+                  <span class="material-symbols-outlined text-[20px]">mail</span>
+                  <span>ارتباط با هیئت تحریریه</span>
+                </a>
+                <a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-lg bg-surface-container-lowest text-on-surface font-title-md text-title-md hover:bg-surface-container-high transition-colors shadow-sm text-center" href="https://t.me/FitJournal1" rel="noopener noreferrer" target="_blank">
+                  <span class="material-symbols-outlined text-[20px]">send</span>
+                  <span>کانال تلگرام نشریه</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.02)]">
+    <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-xl">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-space-xl pb-space-lg">
+        <div class="md:col-span-5 flex flex-col gap-space-sm">
+          <div class="flex items-center gap-space-sm">
+            <img alt="لوگوی نشریه چفت" class="w-9 h-9 rounded-full object-cover" src="assets/images/fit-journal-logo.jpg" />
+            <div class="flex flex-col">
+              <span class="font-title-lg text-title-lg text-on-surface">نشریه علمی تخصصی چفت (FIT)</span>
+              <span class="font-body-md text-body-md text-on-surface-variant">مهندسی مکانیک – ساخت و تولید، دانشگاه تبریز</span>
+            </div>
+          </div>
+          <p class="font-body-md text-body-md text-secondary leading-relaxed">نشریه علمی، فرهنگی و تخصصی دانشجویی گروه مهندسی ساخت و تولید با رویکرد نشر آخرین دستاوردهای مهندسی ساخت، ماشین‌کاری دقیق، متالوژی و فناوری‌های نوین ساخت صنعتی.</p>
+        </div>
+
+        <div class="md:col-span-3 flex flex-col gap-space-sm">
+          <span class="font-title-md text-title-md text-on-surface font-semibold">بخش‌های نشریه</span>
+          <div class="flex flex-col gap-space-xs">
+            <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="index.html">صفحه اصلی</a>
+            <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="issues.html">شماره‌های نشریه</a>
+            <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="issue-details.html">جزئیات شماره اول</a>
+            <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="articles.html">مقالات علمی</a>
+            <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="about.html">درباره نشریه</a>
+            <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="contact.html">تماس با تحریریه</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-4 flex flex-col gap-space-sm">
+          <span class="font-title-md text-title-md text-on-surface font-semibold">شبکه‌های رسمی و سامانه‌ها</span>
+          <div class="flex flex-col gap-space-xs font-body-md text-body-md text-secondary">
+            <a class="flex items-center gap-space-xs hover:text-primary transition-colors" href="https://t.me/FitJournal1" rel="noopener noreferrer" target="_blank">
+              <span class="material-symbols-outlined text-[16px]">send</span>
+              <span>تلگرام: <span dir="ltr">@FitJournal1</span></span>
+            </a>
+            <a class="flex items-center gap-space-xs hover:text-primary transition-colors" href="https://ble.ir/Fitjornal1" rel="noopener noreferrer" target="_blank">
+              <span class="material-symbols-outlined text-[16px]">forum</span>
+              <span>پیام‌رسان بله: <span dir="ltr">@Fitjornal1</span></span>
+            </a>
+            <a class="flex items-center gap-space-xs hover:text-primary transition-colors" href="https://www.instagram.com/fitjornal" rel="noopener noreferrer" target="_blank">
+              <span class="material-symbols-outlined text-[16px]">photo_camera</span>
+              <span>اینستاگرام: <span dir="ltr">@fitjornal</span></span>
+            </a>
+            <a class="flex items-center gap-space-xs hover:text-primary transition-colors" href="mailto:mr.mohammadvalizade7@gmail.com">
+              <span class="material-symbols-outlined text-[16px]">mail</span>
+              <span class="font-technical-code text-technical-code" dir="ltr">mr.mohammadvalizade7@gmail.com</span>
+            </a>
+            <a class="flex items-center gap-space-xs hover:text-primary transition-colors" href="https://stjournals.tabrizu.ac.ir/fa/page/13304/" rel="noopener noreferrer" target="_blank">
+              <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+              <span>سامانه نشریات دانشگاه تبریز</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low px-space-lg py-space-md rounded-xl">
+        <span class="font-label-md text-label-md text-secondary text-center md:text-right">تمامی حقوق برای نشریه چفت و دانشگاه تبریز محفوظ است. پاییز ۱۴۰۵ - ۱۴۰۶</span>
+        <div class="flex items-center gap-space-xs">
+          <span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">فصلنامه علمی و فرهنگی مهندسی ساخت و تولید</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="back-to-top-btn" aria-label="بازگشت به بالای صفحه" class="fixed bottom-6 left-6 z-40 w-11 h-11 rounded-full bg-primary text-on-primary shadow-lg hover:bg-primary-container transition-all duration-300 flex items-center justify-center opacity-0 pointer-events-none translate-y-4" type="button">
+    <span class="material-symbols-outlined text-[22px]">arrow_upward</span>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
